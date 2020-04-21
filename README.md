@@ -12,157 +12,157 @@
     <img src ="https://img.shields.io/github/license/vnpy/vnpy.svg?color=orange"/>
 </p>
 
-vn.py是一套基于Python的开源量化交易系统开发框架，于2015年1月正式发布，在开源社区6年持续不断的贡献下一步步成长为全功能量化交易平台，目前国内外金融机构用户已经超过500家，包括：私募基金、证券自营和资管、期货资管和子公司、高校研究机构、自营交易公司、交易所、Token Fund等。
+vn.py it is based on a set of Python quantitative trading system open source development framework ， to 2015 year 1 officially released ， in the open source community 6 years of continuous contribution to the growth of quantitative trading platform next step is a full-featured ， currently financial institutions, domestic and foreign users has exceeded 500 home ， include ： private equity 、 securities dealers and information management 、 futures and information management subsidiary 、 university research institutions 、 proprietary trading company 、 exchange 、Token Fund wait 。
 
-全新的《vn.py全实战进阶》系列在线课程，已经在官方微信公众号[**vnpy-community**]上线，覆盖CTA策略（已完成）、期权波动率交易（更新中）等内容。购买请扫描下方二维码关注后，点击菜单栏的【进阶课程】按钮即可：
+ new 《vn.py advanced full combat 》 series of online courses ， it has been the official micro-channel public number [**vnpy-community**] online ， cover CTA tactics （ completed ）、 options volatility trading （ updating ） and so on 。 after purchase, please scan the next fanger wei code concerns ， click on the menu bar 【 advanced courses 】 button ：
 
 <p align="center">
   <img src ="https://vnpy.oss-cn-shanghai.aliyuncs.com/vnpy_qr.jpg"/>
 </p>
 
-在使用vn.py进行二次开发（策略、模块等）的过程中有任何疑问，请查看[**vn.py项目文档**](https://www.vnpy.com/docs/cn/index.html)，如果无法解决请前往[**官方社区论坛**](https://www.vnpy.com/forum/)的【提问求助】板块寻求帮助，也欢迎在【经验分享】板块分享你的使用心得！
+ in use vn.py secondary development （ tactics 、 modules, etc. ） have any questions about the process ， please check [**vn.py project documentation **](https://www.vnpy.com/docs/cn/index.html)， if you can not solve the go [** official community forum **](https://www.vnpy.com/forum/) of 【 question for help 】 plate for help ， also welcomed 【 experience sharing 】 share your experience using plate ！
 
-针对vn.py的金融机构用户，创建了一个专门的【vn.py机构用户群】（QQ群号：676499931），主要分享机构应用方面相关的问题，如：银行间市场接入、资管O32系统、分布式部署等内容。请注意本群只对金融机构用户开放，加群时请注明：姓名-机构-部门。
+ against vn.py users of financial institutions ， we created a special 【vn.py institutional users group 】（QQ group number ：676499931）， the main application sharing mechanism related issues ， such as ： inter-bank market access 、 information management O32 system 、 distributed content deployment 。 please note that this group is only available to users of financial institutions ， plus group please specify ： full name - mechanism - department 。
 
-## 功能特点
+##  features 
 
-1. 全功能量化交易平台（vnpy.trader），整合了多种交易接口，并针对具体策略算法和功能开发提供了简洁易用的API，用于快速构建交易员所需的量化交易应用。
+1.  full-featured quantitative trading platform （vnpy.trader）， integrates multiple transaction interface ， and it provides a simple and easy to use for a particular strategy algorithm and feature development API， rapid construction required for traders quantitative trading application 。
 
-2. 覆盖国内外所有交易品种的交易接口（vnpy.gateway）：
+2.  all transactions covering domestic and foreign varieties of the transaction interface （vnpy.gateway）：
 
-    * 国内市场
+    *  domestic market 
 
-        * CTP（ctp）：国内期货、期权
+        * CTP（ctp）： domestic futures 、 options 
 
-        * CTP Mini（mini）：国内期货、期权
+        * CTP Mini（mini）： domestic futures 、 options 
 
-        * CTP证券（sopt）：ETF期权
+        * CTP securities （sopt）：ETF options 
 
-        * 飞马（femas）：国内期货
+        *  pegasus （femas）： domestic futures 
 
-        * 恒生UFT（uft）：国内期货、ETF期权
+        *  hang seng UFT（uft）： domestic futures 、ETF options 
 
-        * 宽睿（oes）：国内证券（A股）
+        *  core width （oes）： domestic securities （A share ）
 
-        * 中泰XTP（xtp）：国内证券（A股）、ETF期权
+        *  china and thailand XTP（xtp）： domestic securities （A share ）、ETF options 
 
-        * 恒生期权（hsoption）：ETF期权
+        *  hang seng options （hsoption）：ETF options 
 
-        * 华鑫奇点（tora）：国内证券（A股）
+        *  华鑫奇 point （tora）： domestic securities （A share ）
 
-        * 飞鼠（sgit）：黄金TD、国内期货
+        *  flying bat （sgit）： gold TD、 domestic futures 
 
-        * 鑫管家（xgj）：期货资管
+        *  xin housekeeper （xgj）： futures and information management 
 
-        * 融航（rohon）：期货资管
+        *  rong hang （rohon）： futures and information management 
 
-        * 中汇亿达（comstar）：银行间市场
+        *  meeting in yida （comstar）： inter-bank market 
 
-    * 海外市场
+    *  overseas market 
 
-        * 富途证券（futu）：港股、美股
+        *  fu passers securities （futu）： hong kong stocks 、 us stocks 
 
-        * 老虎证券（tiger）：全球证券、期货、期权、外汇等
+        *  tiger securities （tiger）： global securities 、 futures 、 options 、 foreign exchange 
 
-        * Interactive Brokers（ib）：全球证券、期货、期权、外汇等
+        * Interactive Brokers（ib）： global securities 、 futures 、 options 、 foreign exchange 
 
-        * 易盛9.0外盘（tap）：全球期货
+        *  yi sheng 9.0 external disk （tap）： global futures 
 
-        * 直达期货（da）：全球期货
+        *  direct futures （da）： global futures 
 
-        * OANDA（oanda）：外汇、CFD
+        * OANDA（oanda）： exchange 、CFD
 
-        * Alpaca（alpaca）：美股（零佣金）
+        * Alpaca（alpaca）： us stocks （ zero commission ）
 
-    * 数字货币
+    *  digital currency 
 
-        * BitMEX（bitmex）：数字货币期货、期权、永续合约
+        * BitMEX（bitmex）： digital currency futures 、 options 、 sustainable contracts 
 
-        * Bybit（bybit）：数字货币永续合约
+        * Bybit（bybit）： sustainable digital currency contracts 
 
-        * OKEX永续（okexs）：数字货币永续合约
+        * OKEX sustainable （okexs）： sustainable digital currency contracts 
 
-        * OKEX期货（okexf）：数字货币期货
+        * OKEX futures （okexf）： digital currency futures 
 
-        * OKEX期权（okexo）：数字货币期权
+        * OKEX options （okexo）： digital currency options 
 
-        * 火币合约（hbdm）：数字货币期货
+        *  fire currency contracts （hbdm）： digital currency futures 
 
-        * 币安永续（binancef)：数字货币永续合约
+        *  an coins sustainable （binancef)： sustainable digital currency contracts 
 
-        * Gate.io永续（gateios）：数字货币永续合约
+        * Gate.io sustainable （gateios）： sustainable digital currency contracts 
 
-        * Deribit（deribit），数字货币期权、永续合约
+        * Deribit（deribit）， digital currency options 、 sustainable contracts 
 
-        * 币安（binance）：数字货币现货
+        *  an coins （binance）： digital currency spot 
 
-        * OKEX（okex）：数字货币现货
+        * OKEX（okex）： digital currency spot 
 
-        * 火币（huobi）：数字货币现货
+        *  fire currency （huobi）： digital currency spot 
 
-        * Bitfinex（bitfinex）：数字货币现货
+        * Bitfinex（bitfinex）： digital currency spot 
 
-        * Coinbase（coinbase）：数字货币现货
+        * Coinbase（coinbase）： digital currency spot 
 
-        * Bitstamp（bitstamp）：数字货币现货
+        * Bitstamp（bitstamp）： digital currency spot 
 
-        * 1Token（onetoken）：数字货币券商（现货、期货）
+        * 1Token（onetoken）： digital currency broker （ stock 、 futures ）
 
-    * 特殊应用
+    *  special applications 
 
-        * RPC服务（rpc）：跨进程通讯接口，用于分布式架构
+        * RPC service （rpc）： cross-process communication interface ， for distributed architecture 
 
-3. 开箱即用的各类量化策略交易应用（vnpy.app）：
+3.  all kinds of quantitative strategies trading applications out of the box （vnpy.app）：
 
-    * cta_strategy：CTA策略引擎模块，在保持易用性的同时，允许用户针对CTA类策略运行过程中委托的报撤行为进行细粒度控制（降低交易滑点、实现高频策略）
+    * cta_strategy：CTA policy engine module ， while maintaining the ease of use ， to allow for users CTA process class policy to run in the report commissioned by the withdrawal behavior of fine-grained control （ reduce transaction slippage 、 high frequency strategies ）
 
-    * cta_backtester：CTA策略回测模块，无需使用Jupyter Notebook，直接使用图形界面直接进行策略回测分析、参数优化等相关工作
+    * cta_backtester：CTA strategy backtesting module ， without the use of Jupyter Notebook， direct use graphical interface directly strategy backtesting analysis 、 parameter optimization and other related work 
 
-    * spread_trading：价差交易模块，支持自定义价差，实时计算价差行情和持仓，支持半自动价差算法交易以及全自动价差策略交易两种模式
+    * spread_trading： spread trading module ， support for custom spreads ， real-time quotes and to calculate the spread positions ， support for semi-automatic and fully automatic algorithmic trading spreads spread trading strategies two modes 
 
-    * option_master：期权交易模块，针对国内期权市场设计，支持多种期权定价模型、隐含波动率曲面计算、希腊值风险跟踪等功能
+    * option_master： options trading module ， design options for the domestic market ， it supports a variety of option pricing model 、 implied volatility surface computing 、 greece value risk tracking and other functions 
 
-    * portfolio_strategy：组合策略模块，面向同时交易多合约的量化策略（Alpha、期权套利等），提供历史数据回测和实盘自动交易功能
+    * portfolio_strategy： combine policy module ， at the same time quantitative strategies for trading contracts and more （Alpha、 options arbitrage, etc. ）， back-tested historical data and automated trading firm functions 
 
-    * algo_trading：算法交易模块，提供多种常用的智能交易算法：TWAP、Sniper、Iceberg、BestLimit等等，支持常用算法配置保存
+    * algo_trading： algorithmic trading module ， it offers a variety of commonly used smart trading algorithms ：TWAP、Sniper、Iceberg、BestLimit and many more ， support for common algorithm configuration is saved 
 
-    * script_trader：脚本策略模块，针对多标的组合类交易策略设计，同时也可以直接在命令行中实现REPL指令形式的交易，不支持回测功能
+    * script_trader： scripts policy module ， for multi-target combination class trading strategy design ， at the same time can also be implemented directly on the command line REPL instruction in the form of transaction ， backtesting feature is not supported 
 
-    * chart_wizard：K线图表模块，基于RQData数据服务（期货）或者交易接口（数字货币）获取历史数据，并结合Tick推送显示实时行情变化
+    * chart_wizard：K line graph module ， based on RQData data service （ futures ） or transaction interface （ digital currency ） obtain historical data ， combined Tick push display real-time market changes 
 
-    * portfolio_manager：投资组合模块，面向各类基本面交易策略，以独立的策略子账户为基础，提供交易仓位的自动跟踪以及盈亏实时统计功能
+    * portfolio_manager： portfolio module ， fundamentals for all types of trading strategies ， to separate policy-based subaccounts ， providing trade position of the automatic tracking and real-time profit and loss statistics 
 
-    * rpc_service：RPC服务模块，允许将某一VN Trader进程启动为服务端，作为统一的行情和交易路由通道，允许多客户端同时连接，实现多进程分布式系统
+    * rpc_service：RPC service module ， allows a VN Trader process starts for the server ， as a unified market and transaction routing channel ， it allows multiple simultaneous client connections ， multi-process distributed systems 
 
-    * data_manager：历史数据管理模块，通过树形目录查看数据库中已有的数据概况，选择任意时间段数据查看字段细节，支持CSV文件的数据导入和导出
+    * data_manager： historical data management module ， view profile data already in the database through the directory tree ， select any period of time to see the field data details ， stand by CSV data import and export files 
 
-    * data_recorder：行情记录模块，基于图形界面进行配置，根据需求实时录制Tick或者K线行情到数据库中，用于策略回测或者实盘初始化
+    * data_recorder： quotes recording module ， be configured based graphical interface ， according to the needs of real-time recording Tick or K quotes line into the database ， backtesting for strategy or firm initialization 
 
-    * excel_rtd：Excel RTD（Real Time Data）实时数据服务，基于pyxll模块实现在Excel中获取各类数据（行情、合约、持仓等）的实时推送更新
+    * excel_rtd：Excel RTD（Real Time Data） real time data services ， based on pyxll module implemented in Excel the acquisition of various types of data （ price 、 contract 、 positions, etc. ） real-time push updates 
 
-    * risk_manager：风险管理模块，提供包括交易流控、下单数量、活动委托、撤单总数等规则的统计和限制，有效实现前端风控功能
+    * risk_manager： risk management module ， including transaction provides flow control 、 under a single number 、 principal activities 、 statistics and limit the total number of regular withdrawals ， effective to achieve the control function of the front end of the wind 
 
-4. Python交易API接口封装（vnpy.api），提供上述交易接口的底层对接实现。
+4. Python transaction API interface package （vnpy.api）， the deal provides an interface to achieve the underlying docking 。
 
-5. 简洁易用的事件驱动引擎（vnpy.event），作为事件驱动型交易程序的核心。
+5.  simple and easy to use event-driven engine （vnpy.event）， as the core of event-driven trading programs 。
 
-6. 跨进程通讯标准组件（vnpy.rpc），用于实现分布式部署的复杂交易系统。
+6.  inter-process communication standard components （vnpy.rpc）， system implementation for complex transactions distributed deployment 。
 
-7. Python高性能K线图表（vnpy.chart），支持大数据量图表显示以及实时数据更新功能。
+7. Python high performance K line chart （vnpy.chart）， support large amount of data in the chart display and real-time data updates 。
 
-8. [社区论坛](http://www.vnpy.com)和[知乎专栏](http://zhuanlan.zhihu.com/vn-py)，内容包括vn.py项目的开发教程和Python在量化交易领域的应用研究等内容。
+8. [ community forum ](http://www.vnpy.com) with [ know almost column ](http://zhuanlan.zhihu.com/vn-py)， content include vn.py tutorials and project development Python the contents of applied research in the field of quantitative trading 。
 
-9. 官方交流群262656087（QQ），管理严格（定期清除长期潜水的成员），入群费将捐赠给vn.py社区基金。
+9.  the official exchange group 262656087（QQ）， strict management （ periodically clear long-term member of diving ）， the fee will be donated to the group vn.py community fund 。
 
-## 环境准备
+##  preparing the environment 
 
-* 推荐使用vn.py团队为量化交易专门打造的Python发行版[VNStudio-2.1.2](https://download.vnpy.com/vnstudio-2.1.2.exe)，内置了最新版的vn.py框架以及VN Station量化管理平台，无需手动安装
-* 支持的系统版本：Windows 7以上/Windows Server 2008以上/Ubuntu 18.04 LTS
-* 支持的Python版本：Python 3.7 64位（**注意必须是Python 3.7 64位版本**）
+*  recommended use vn.py quantitative trading team built specifically Python release [VNStudio-2.1.2](https://download.vnpy.com/vnstudio-2.1.2.exe)， built with the latest version of the vn.py framework and VN Station quantitative management platform ， no need to manually install 
+*  support system version ：Windows 7 the above /Windows Server 2008 the above /Ubuntu 18.04 LTS
+*  supported Python version ：Python 3.7 64 place （** note must be Python 3.7 64 bit versions **）
 
-## 安装步骤
+##  installation steps 
 
-在[这里](https://github.com/vnpy/vnpy/releases)下载最新版本，解压后运行以下命令安装：
+ in [ here ](https://github.com/vnpy/vnpy/releases) download the latest version ， after extracting run the following command to install ：
 
 **Windows**
 
@@ -172,24 +172,24 @@ vn.py是一套基于Python的开源量化交易系统开发框架，于2015年1�
 
     bash install.sh
 
-## 使用指南
+##  user's guidance 
 
-1. 在[SimNow](http://www.simnow.com.cn/)注册CTP仿真账号，并在[该页面](http://www.simnow.com.cn/product.action)获取经纪商代码以及交易行情服务器地址。
+1.  in [SimNow](http://www.simnow.com.cn/) registered CTP simulation account ， and [ this page ](http://www.simnow.com.cn/product.action) get the code and brokers trading market server address 。
 
-2. 在[vn.py社区论坛](https://www.vnpy.com/forum/)注册获得VN Station账号密码（论坛账号密码即是）
+2.  in [vn.py community forum ](https://www.vnpy.com/forum/) register for VN Station account password （ forum account password that is ）
 
-3. 启动VN Station（安装VN Studio后会在桌面自动创建快捷方式），输入上一步的账号密码登录
+3.  start up VN Station（ installation VN Studio after automatically create a shortcut on the desktop ）， enter your login account and password on step 
 
-4. 点击底部的**VN Trader Lite**按钮，开始你的交易！！！
+4.  click the bottom **VN Trader Lite** push button ， start your transaction ！！！
 
-注意：
+ note ：
 
-* 在VN Trader的运行过程中请勿关闭VN Station（会自动退出）
-* 如需要灵活配置量化交易应用组件，请使用**VN Trader Pro**
+*  in VN Trader do not turn off the process of running VN Station（ it will automatically exit ）
+*  if you need the flexibility to configure quantitative trading application components ， please use **VN Trader Pro**
 
-## 脚本运行
+##  script 
 
-除了基于VN Station的图形化启动方式外，也可以在任意目录下创建run.py，写入以下示例代码：
+ in addition to on VN Station graphical way outside to start ， you can also create any directory run.py， the following sample code is written ：
 
 ```Python
 from vnpy.event import EventEngine
@@ -219,53 +219,53 @@ if __name__ == "__main__":
     main()
 ```
 
-在该目录下打开CMD（按住Shift->点击鼠标右键->在此处打开命令窗口/PowerShell）后运行下列命令启动VN Trader：
+ open in the directory CMD（ press and hold Shift-> right click -> open a command window here /PowerShell） after you run the following command to start VN Trader：
 
     python run.py
 
-## 贡献代码
+##  contributing code 
 
-vn.py使用Github托管其源代码，如果希望贡献代码请使用github的PR（Pull Request）的流程:
+vn.py use Github managed its source code ， if you want to contribute code to use github of PR（Pull Request） process :
 
-1. [创建 Issue](https://github.com/vnpy/vnpy/issues/new) - 对于较大的改动（如新功能，大型重构等）最好先开issue讨论一下，较小的improvement（如文档改进，bugfix等）直接发PR即可
+1. [ create  Issue](https://github.com/vnpy/vnpy/issues/new) -  for larger changes （ as new features ， large-scale reconstruction, etc. ） a good idea to open issue discuss ， smaller improvement（ such as documentation improvements ，bugfix wait ） sent directly PR to 
 
-2. Fork [vn.py](https://github.com/vnpy/vnpy) - 点击右上角**Fork**按钮
+2. Fork [vn.py](https://github.com/vnpy/vnpy) -  click on the top right **Fork** push button 
 
-3. Clone你自己的fork: ```git clone https://github.com/$userid/vnpy.git```
-	* 如果你的fork已经过时，需要手动sync：[同步方法](https://help.github.com/articles/syncing-a-fork/)
+3. Clone your own fork: ```git clone https://github.com/$userid/vnpy.git```
+	*  if your fork outdated ， need to manually sync：[ synchronization method ](https://help.github.com/articles/syncing-a-fork/)
 
-4. 从**dev**创建你自己的feature branch: ```git checkout -b $my_feature_branch dev```
+4.  from **dev** create your own feature branch: ```git checkout -b $my_feature_branch dev```
 
-5. 在$my_feature_branch上修改并将修改push到你的fork上
+5.  in $my_feature_branch on modify and amend push to your fork on 
 
-6. 创建从你的fork的$my_feature_branch分支到主项目的**dev**分支的[Pull Request] -  [在此](https://github.com/vnpy/vnpy/compare?expand=1)点击**compare across forks**，选择需要的fork和branch创建PR
+6.  creating your fork of $my_feature_branch branch to the main project **dev** branch [Pull Request] -  [ here ](https://github.com/vnpy/vnpy/compare?expand=1) click on **compare across forks**， select the desired fork with branch create PR
 
-7. 等待review, 需要继续改进，或者被Merge!
+7.  wait review,  we need to continue to improve ， or is Merge!
 
-在提交代码的时候，请遵守以下规则，以提高代码质量：
+ when submitting code ， please observe the following rules ， to improve code quality ：
 
-  * 使用[autopep8](https://github.com/hhatto/autopep8)格式化你的代码。运行```autopep8 --in-place --recursive . ```即可。
-  * 使用[flake8](https://pypi.org/project/flake8/)检查你的代码，确保没有error和warning。在项目根目录下运行```flake8```即可。
+  *  use [autopep8](https://github.com/hhatto/autopep8) format your code 。 run ```autopep8 --in-place --recursive . ``` to 。
+  *  use [flake8](https://pypi.org/project/flake8/) check your code ， ensure that no error with warning。 run in the project root directory ```flake8``` to 。
 
 
 
-## 项目捐赠
+##  project donation 
 
-过去6年中收到过许多社区用户的捐赠，在此深表感谢！所有的捐赠资金都投入到了vn.py社区基金中，用于支持vn.py项目的运作。
+ past 6 years received many donations user community ， in this deeply grateful ！ all donated funds are put into the vn.py community fund ， for support vn.py operation of the project 。
 
-先强调一下：**vn.py是开源项目，可以永久免费使用，并没有强制捐赠的要求！！！**
+ to emphasize ：**vn.py it is an open source project ， it can be permanently free of charge ， and there is no mandatory requirement to donate ！！！**
 
-捐赠方式：支付宝3216630132@qq.com（*晓优）
+ donations ： alipay 3216630132@qq.com（* xiao excellent ）
 
-长期维护捐赠清单，请在留言中注明是项目捐赠以及捐赠人的名字。
+ long-term maintenance of a list of donations ， please indicate in the message is a project donor and the donor's name 。
 
-## 其他内容
+##  other content 
 
-* [获取帮助](https://github.com/vnpy/vnpy/blob/dev/.github/SUPPORT.md)
-* [社区行为准侧](https://github.com/vnpy/vnpy/blob/dev/.github/CODE_OF_CONDUCT.md)
-* [Issue模板](https://github.com/vnpy/vnpy/blob/dev/.github/ISSUE_TEMPLATE.md)
-* [PR模板](https://github.com/vnpy/vnpy/blob/dev/.github/PULL_REQUEST_TEMPLATE.md)
+* [ getting help ](https://github.com/vnpy/vnpy/blob/dev/.github/SUPPORT.md)
+* [ community conduct side ](https://github.com/vnpy/vnpy/blob/dev/.github/CODE_OF_CONDUCT.md)
+* [Issue template ](https://github.com/vnpy/vnpy/blob/dev/.github/ISSUE_TEMPLATE.md)
+* [PR template ](https://github.com/vnpy/vnpy/blob/dev/.github/PULL_REQUEST_TEMPLATE.md)
 
-## 版权说明
+##  copyright statement 
 
 MIT
